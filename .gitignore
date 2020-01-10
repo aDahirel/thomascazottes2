@@ -8,3 +8,7 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+.idea/misc.xml
+.idea/modules.xml
+.idea/thomascazottes2.iml
+.idea/vcs.xml
