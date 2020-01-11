@@ -11,7 +11,7 @@ body{
     font-size:1rem;
     font-weight:normal;
     line-height:1.5;
-    color:#333;
+    color:#000000;
     overflow-x:hidden;
 }
 
@@ -37,6 +37,7 @@ body{
     width:100%;
     height:100vh;
     overflow:hidden;
+=
 }
 
 .fullscreen-video-wrap video{
@@ -52,7 +53,7 @@ body{
     width:100vw;
     z-index:1;
     background:#000000;
-    opacity:3;
+    opacity:0.5;
 }
 
 .header-content{
@@ -69,7 +70,7 @@ body{
 .header-content p{
     font-size:1.5rem;
     display:block;
-    padding-bottom:2rem;
+    margin-bottom: 3em;
 }
 
 @media(max-width:960px){
@@ -79,16 +80,16 @@ body{
     }
 }
 
-.text-button-container {
-
+.direphot {
+    font-weight: 200;
 }
 
 .text-button {
     color: #FFFFFF;
     text-transform: capitalize;
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding-left: 1em;
-    font-weight: 500;
+    font-weight: 200;
 }
 
 .text-button:hover {
@@ -96,3 +97,106 @@ body{
     text-decoration: none;
 }
 
+.container-loading {
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin: -7px 0 0 -55px;
+    width: 110px;
+    height: 14px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 14px;
+    border: 2px solid white;
+    margin: 10px;
+    animation: rotate 1s infinite linear;
+    animation-fill-mode: both;
+    display: inline-block;
+}
+
+.circle:nth-of-type(2) {
+    animation: rotate2 1s infinite linear;
+    animation-fill-mode: both;
+}
+
+.circle:nth-of-type(3) {
+    animation: rotate3 1s infinite linear;
+    animation-fill-mode: both;
+}
+
+@keyframes rotate {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    25% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    85% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    25% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    85% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes rotate3 {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    75% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    85% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
