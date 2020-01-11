@@ -51,8 +51,8 @@ body{
     left:0;
     width:100vw;
     z-index:1;
-    background:#225470;
-    opacity:0.45;
+    background:#000000;
+    opacity:3;
 }
 
 .header-content{
@@ -78,3 +78,21 @@ body{
         padding-left:3rem;
     }
 }
+
+.text-button-container {
+
+}
+
+.text-button {
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    padding-left: 1em;
+    font-weight: 500;
+}
+
+.text-button:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
