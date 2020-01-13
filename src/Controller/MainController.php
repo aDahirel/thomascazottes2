@@ -26,12 +26,4 @@ class MainController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/main/article", name="article_show")
-     */
-    public function show()
-    {
-        return $this->render('main/show.html.twig', [
-        ]);
-    }
 }
