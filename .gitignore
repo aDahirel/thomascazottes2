@@ -12,3 +12,8 @@
 .idea/modules.xml
 .idea/thomascazottes2.iml
 .idea/vcs.xml
+.idea/php.xml
+.idea/thomascazottes2.iml
+composer.json
+composer.lock
+symfony.lock

@@ -1,7 +1,20 @@
 {% extends 'base.html.twig' %}
+ {% block stylesheets %}
+     <link rel="stylesheet" href="{{ asset('assets/css/show.css') }}">
+ {% endblock %}
 {% block body %}
 
-    <h1 id="yees">wesh larticle</h1>
-    <p>faire le site</p>
+    <div class="container-article">
+        <div class="article">
+            <div class="contenue">
+                <img src="{{ asset('imgfond.jpg') }}">
+            </div>
+        </div>
+        <div class="article">
+            <div class="contenue">
+                <img src="{{ asset('imgfond.jpg') }}">
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
