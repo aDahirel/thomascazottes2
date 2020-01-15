@@ -1,4 +1,26 @@
 .container-article {
     display: flex;
-    background: red;
+    flex-direction: column;
+    height: 25vh;
+    max-width: 960px;
+}
+
+.text-article {
+    
+}
+
+.title-article{
+    font-size: 50px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+.contenue{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-image {
+
 }
