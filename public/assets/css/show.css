@@ -1,26 +1,32 @@
 .container-article {
-    display: flex;
-    flex-direction: column;
-    height: 25vh;
-    max-width: 960px;
+
+}
+
+.article {
+
+}
+
+.contenue {
+
 }
 
 .text-article {
-    
+
 }
 
-.title-article{
-    font-size: 50px;
-    margin-bottom: 0;
-    text-transform: capitalize;
+.title-article {
+
 }
-.contenue{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+
+.info-article {
+
+}
+
+.article-image-container {
+    max-height: 80vh;
+    overflow: hidden;
 }
 
 .article-image {
-
+    min-width: 100%;
 }
