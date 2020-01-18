@@ -12,15 +12,21 @@
 }
 
 .container-text-article {
-    position: relative;
+    z-index:2;
+    margin-left: auto;
+    margin-right: auto;
+    /*position: relative;
     text-align: center;
+     */
 }
 
 .text-article {
+    /*
     position: absolute;
     top: 40vh;
     left: 50%;
     transform: translate(-50%, -50%);
+     */
 }
 
 .title-article {
@@ -39,6 +45,12 @@
 
 .article-image {
     min-width: 100%;
+}
+
+.text-white{
+    color: #FFFFFF;
+    border-bottom: #FFFFFF !important;
+    border-top: #FFFFFF !important;
 }
 
 /* BUTTON */
@@ -72,12 +84,12 @@
 
 .button-article:nth-child(1):before {
     left: 0;
-    border-top: 2px solid #000000;
+    border-top: 2px solid #FFFFFF;
 }
 
 .button-article:nth-child(1):after {
     right: 0;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #FFFFFF;
 }
 
 .button-article:nth-child(1):hover {
