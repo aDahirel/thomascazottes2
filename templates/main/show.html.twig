@@ -1,22 +1,37 @@
- {% block stylesheets %}
-     <link rel="stylesheet" href="{{ asset('assets/css/show.css') }}">
- {% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/show.css') }}">
+{% endblock %}
 {% block body %}
     <div class="container-article">
-        <div class="article">
+        <div id="yees" class="article">
             <div class="image-article">
-                <img src="https://via.placeholder.com/1400x600" alt="">
+                <img class="image-src" src="https://via.placeholder.com/1400x600" alt="">
             </div>
             <div class="text-article">
-                <p>
+                <h1 id="yees" class="title-article white" >
                     ok habitant de bagdad
-                </p>
+                </h1>
+                <div class="button-article-container text-black">
+                    <a class="button-article">regardez</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="image-article">
+                <img class="image-src" src="https://via.placeholder.com/1400x600" alt="">
+            </div>
+            <div class="text-article">
+                <h1 class="title-article black">
+                    le titre est respectable
+                </h1>
+                <div class="button-article-container text-black">
+                    <a class="button-article">regardez</a>
+                </div>
             </div>
         </div>
 
     </div>
 
-    <div class="button-article-container text-black">
-        <a class="button-article">regardez</a>
-    </div>
+
 {% endblock %}
