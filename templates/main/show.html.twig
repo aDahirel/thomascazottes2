@@ -1,51 +1,22 @@
-{% extends 'base.html.twig' %}
  {% block stylesheets %}
      <link rel="stylesheet" href="{{ asset('assets/css/show.css') }}">
  {% endblock %}
 {% block body %}
-
     <div class="container-article">
         <div class="article">
-            <div class="contenue">
-
-                <div class="article-image-container">
-                    <img id="yees" class="article-image" src="{{ asset('importantaimer.jpg') }}" width="100%"
-                         height="100%">
-                </div>
-
-                <div class="container-text-article">
-                    <div class="text-article text-white text-md-center">
-                        <div class="title-article">
-                            <h1>l'important c'est d'aimer</h1>
-                        </div>
-                        <div class="button-article-container text-white">
-                            <a class="button-article">regardez</a>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="image-article">
+                <img src="https://via.placeholder.com/1400x600" alt="">
+            </div>
+            <div class="text-article">
+                <p>
+                    ok habitant de bagdad
+                </p>
             </div>
         </div>
-        <div class="article">
-            <div class="contenue">
 
-                <div class="container-text-article">
-                    <div class="text-article ">
-                        <div class="title-article">
-                            <h1>l'important c'est d'aimer</h1>
-                        </div>
-                        <div class="button-article-container">
-                            <a class="button-article">regardez</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="article-image-container">
-                    <img class="article-image" src="//via.placeholder.com/1920x1080">
-                    <!-- code du buton https://codepen.io/davidicus/pen/emgQKJ  -->
-                </div>
-            </div>
-        </div>
     </div>
 
+    <div class="button-article-container text-black">
+        <a class="button-article">regardez</a>
+    </div>
 {% endblock %}

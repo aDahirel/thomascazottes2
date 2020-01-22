@@ -1,59 +1,6 @@
-.container-article {
 
-}
 
-.article {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.contenue {
-
-}
-
-.container-text-article {
-    z-index:2;
-    margin-left: auto;
-    margin-right: auto;
-    /*position: relative;
-    text-align: center;
-     */
-}
-
-.text-article {
-    /*
-    position: absolute;
-    top: 40vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-     */
-}
-
-.title-article {
-    text-transform: uppercase;
-    font-size: 0.80em;
-}
-
-.info-article {
-
-}
-
-.article-image-container {
-    max-height: 80vh;
-    overflow: hidden;
-}
-
-.article-image {
-    min-width: 100%;
-}
-
-.text-white{
-    color: #FFFFFF;
-    border-bottom: #FFFFFF !important;
-    border-top: #FFFFFF !important;
-}
-
-/* BUTTON */
+/* ---------------------------  BUTTON  -------------------------------------- */
 
 .button-article-container .button-article {
     width: 150px;
