@@ -31,7 +31,7 @@
                 <div class="circle"></div>
             </div>
             <section id="section10" class="demo">
-                <a href="#yees"><span></span></a>
+                <a href="#ancre"><span></span></a>
             </section>
         </div>
     </header>
@@ -105,5 +105,8 @@
 {% endblock %}
 
 {% block body %}
-    {% include "main/show.html.twig" %}
+<div id="ancre"></div>
+    {% include "articles/article.html.twig" %}
+    {% include "main/contact.html.twig" %}
+    {% include "main/footer.html.twig" %}
 {% endblock %}
