@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 {% block header %}
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
     <link rel="script" href="assets/js/home.js">
     <header class="v-header container">
         <div class="fullscreen-video-wrap">
@@ -15,10 +15,14 @@
             <p class="direphot">Directeur de la photographie - Chef opérateur</p>
             <!-- Learn more button -->
             <div class="text-button-container">
-                <a onmouseover="onMousseVideo()" onmouseleave="videoLeft()" id="text-buton1" class="text-button" href="">fiction</a>
-                <a onmouseover="onMousseVideo2()" onmouseleave="videoLeft()" id="text-buton2" class="text-button" href="">vidéo clip</a>
-                <a onmouseover="onMousseVideo()" onmouseleave="videoLeft()" id="text-buton3" class="text-button" href="">Documentaire</a>
-                <a onmouseover="onMousseVideo2()" onmouseleave="videoLeft()" id="text-buton4" class="text-button" href="">photographies</a>
+                <a onmouseover="onMousseVideo()" onmouseleave="videoLeft()" id="text-buton1" class="text-button"
+                   href="">fiction</a>
+                <a onmouseover="onMousseVideo2()" onmouseleave="videoLeft()" id="text-buton2" class="text-button"
+                   href="">vidéo clip</a>
+                <a onmouseover="onMousseVideo()" onmouseleave="videoLeft()" id="text-buton3" class="text-button"
+                   href="">Documentaire</a>
+                <a onmouseover="onMousseVideo2()" onmouseleave="videoLeft()" id="text-buton4" class="text-button"
+                   href="">photographies</a>
             </div>
             <!-- Loading Part -->
             <div id="loading" class="container-loading">
@@ -34,34 +38,38 @@
 
     <script>
         var test = 0;
+
         function onMousseVideo() {
             document.getElementById("loading").style.display = "block";
-            test=1;
-            setTimeout(videoEnter,2000);
+            test = 1;
+            setTimeout(videoEnter, 2000);
         }
 
         function videoEnter() {
-            if (test==1){
+            if (test == 1) {
                 clearTimeout(onMousseVideo);
-                document.getElementById("video").src='golf.mp4';
+                document.getElementById("video").src = 'golf.mp4';
             }
         }
+
         function onMousseVideo2() {
             document.getElementById("loading").style.display = "block";
-            test=1;
-            setTimeout(videoEnter2,2000);
+            test = 1;
+            setTimeout(videoEnter2, 2000);
         }
+
         function videoEnter2() {
-            if (test==1){
+            if (test == 1) {
                 clearTimeout(onMousseVideo);
-                document.getElementById("video").src='vidone.mp4';
+                document.getElementById("video").src = 'vidone.mp4';
             }
 
         }
+
         function videoLeft() {
             document.getElementById("loading").style.display = "none";
             test = 0;
-            document.getElementById("video").src='vidtoo.mp4';
+            document.getElementById("video").src = 'vidtoo.mp4';
         }
 
 

@@ -1,15 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block header %}{% endblock %}
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+{% block header %}{% endblock %}
+{% block body %}{% endblock %}
+{% block javascripts %}{% endblock %}
+</body>
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color pt-4">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+        <!-- Footer links -->
+        <div class="row text-center text-md-left pb-3">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+                <!-- Content -->
+                <h5 class="text-uppercase">Thomas Cazottes</h5>
+                <p>Jeune shlag cinéeaste en devenire lorem. I empower this galaxy, it's called unrelated future. Suns,
+                    monkeys, and remarkable winds will always protect them.</p>
+            </div>
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
+                <h5 class="text-uppercase">Contact</h5>
+                <p style="margin-bottom: 0.4rem">
+                     Paris, --- ----
+                </p>
+                <p style="margin-bottom: 0.4rem">
+                   <a href="mailto:thomascazottes@gmail.com?subject=Contact site web">thomascazottes@gmail.com</a>
+                </p>
+                <p style="margin-bottom: 0.4rem">
+                    <a href="tel:+33686158613">06 86 15 86 13</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Footer links -->
+        <hr>
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8">
+                <!--Copyright-->
+                <p class="text-center text-md-left">© 2020 Copyright:
+                    <strong> Jean Lagniaux & Axel Dahirel</strong>
+                </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0">
+                <!-- Social buttons -->
+                <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+</footer>
 </html>
