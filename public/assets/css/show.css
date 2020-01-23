@@ -20,7 +20,7 @@
     z-index: 3;
     margin: 0 auto;
     left: 0;
-    top: 50%;
+    top: 39%;
     right: 0;
     text-align: center;
     width: 60%;
@@ -28,8 +28,8 @@
 
 .title-article {
     text-transform: none;
-    font-size: 4em;
-    font-weight: 600;
+    font-size: 3.5em;
+    font-weight: 200;
 }
 
 .white {
