@@ -40,7 +40,7 @@
     color: black;
 }
 
-/* ---------------------------  BUTTON  -------------------------------------- */
+/* ---------------------------  BUTTON WHITE  -------------------------------------- */
 
 .button-article-container .button-article {
     width: 150px;
@@ -53,11 +53,12 @@
     position: relative;
     cursor: pointer;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
-/** hover 1 */
+/** hover white */
 .button-article:nth-child(1) {
-    color: #000000;
+    color: #FFFFFF;
     transition: .3s all;
 }
 
@@ -88,4 +89,51 @@
     width: 100%;
 }
 
-/** end hover 1*/
+/* ---------------------------  BUTTON BLACK  -------------------------------------- */
+
+.button-article-container .button-article-b {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/** hover white */
+.button-article-b:nth-child(1) {
+    color: #000000;
+    transition: .3s all;
+}
+
+.button-article-b:nth-child(1):before, a:nth-child(1):after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    transition: .3s all;
+}
+
+.button-article-b:nth-child(1):before {
+    left: 0;
+    border-top: 2px solid #000000;
+}
+
+.button-article-b:nth-child(1):after {
+    right: 0;
+    border-bottom: 2px solid #000000;
+}
+
+.button-article-b:nth-child(1):hover {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.button-article-b:nth-child(1):hover:after, a:nth-child(1):hover:before {
+    width: 100%;
+}
