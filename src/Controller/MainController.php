@@ -25,5 +25,13 @@ class MainController extends AbstractController
         return $this->render('main/home.html.twig', [
         ]);
     }
+    /**
+     * @Route("/article", name="article")
+     */
+    public function article()
+    {
+        return $this->render('articles/article.html.twig', [
+        ]);
+    }
 
 }
