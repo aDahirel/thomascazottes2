@@ -1,0 +1,36 @@
+{% block body %}
+<form><h2>Contact</h2><hr>
+    <fieldset>
+      <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="thomascazottes@gmail.com">
+            </div>
+            <label for="staticPhone" class="col-sm-2 col-form-label">Téléphone</label>
+            <div class="col-sm-10">
+              <input type="text" readonly="" class="form-control-plaintext" id="staticPhone" value="0686158613">
+            </div>
+            <label for="staticLinkedIn" class="col-sm-2 col-form-label">LinkedIn</label>
+            <div class="col-sm-10">
+              <a href="https://www.linkedin.com/in/thomas-cazottes-b2064a160/" target="_blank"><input type="text" readonly="" class="form-control-plaintext" id="staticLinkedIn" value="https://www.linkedin.com/in/thomas-cazottes/"></a>
+            </div>
+            <label for="staticYoutube" class="col-sm-2 col-form-label">Youtube</label>
+            <div class="col-sm-10">
+              <a href="https://www.youtube.com/channel/UC0iGGZpe03IPO5bq_aiiw1w" target="_blank"><input type="text" readonly="" class="form-control-plaintext" id="staticYoutube" value="https://www.youtube.com/channel/Lexmurphy/"></a>
+            </div>
+        </div>
+    </fieldset>
+  </form>
+  <style>
+    form{
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    
+    #staticLinkedIn, #staticYoutube{
+        cursor: pointer;
+    }
+  </style>
+ {% endblock %}
