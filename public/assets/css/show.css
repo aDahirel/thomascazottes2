@@ -1,0 +1,139 @@
+.article {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+
+.image-article {
+    width: 100%;
+}
+
+.image-src {
+    width: 100%;
+    text-align: center;
+}
+
+.text-article {
+    position: absolute;
+    z-index: 3;
+    margin: 0 auto;
+    left: 0;
+    top: 39%;
+    right: 0;
+    text-align: center;
+    width: 60%;
+}
+
+.title-article {
+    text-transform: none;
+    font-size: 3.5em;
+    font-weight: 200;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+/* ---------------------------  BUTTON WHITE  -------------------------------------- */
+
+.button-article-container .button-article {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/** hover white */
+.button-article:nth-child(1) {
+    color: #FFFFFF;
+    transition: .3s all;
+}
+
+.button-article:nth-child(1):before, a:nth-child(1):after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    transition: .3s all;
+}
+
+.button-article:nth-child(1):before {
+    left: 0;
+    border-top: 2px solid #FFFFFF;
+}
+
+.button-article:nth-child(1):after {
+    right: 0;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.button-article:nth-child(1):hover {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.button-article:nth-child(1):hover:after, a:nth-child(1):hover:before {
+    width: 100%;
+}
+
+/* ---------------------------  BUTTON BLACK  -------------------------------------- */
+
+.button-article-container .button-article-b {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/** hover white */
+.button-article-b:nth-child(1) {
+    color: #000000;
+    transition: .3s all;
+}
+
+.button-article-b:nth-child(1):before, a:nth-child(1):after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    transition: .3s all;
+}
+
+.button-article-b:nth-child(1):before {
+    left: 0;
+    border-top: 2px solid #000000;
+}
+
+.button-article-b:nth-child(1):after {
+    right: 0;
+    border-bottom: 2px solid #000000;
+}
+
+.button-article-b:nth-child(1):hover {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.button-article-b:nth-child(1):hover:after, a:nth-child(1):hover:before {
+    width: 100%;
+}
