@@ -1,0 +1,17 @@
+body{
+    background: #000000;
+}
+
+.none-style-link{
+    color: #FFFFFF;
+}
+
+.none-style-link:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.font-weight-small {
+    font-weight: 300;
+}

@@ -1,6 +1,8 @@
 {% extends 'base.html.twig' %}
 {% block header %}
     <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/show.css') }}">
+
     <link rel="script" href="assets/js/home.js">
     <header class="v-header container">
         <div class="fullscreen-video-wrap">
@@ -31,7 +33,7 @@
                 <div class="circle"></div>
             </div>
             <section id="section10" class="demo">
-                <a href="#ancre"><span></span></a>
+                <a href="#yees"><span></span></a>
             </section>
         </div>
     </header>
@@ -105,8 +107,5 @@
 {% endblock %}
 
 {% block body %}
-<div id="ancre"></div>
-    {% include "articles/article.html.twig" %}
-    {% include "main/contact.html.twig" %}
-    {% include "main/footer.html.twig" %}
+    {% include "main/show.html.twig" %}
 {% endblock %}
