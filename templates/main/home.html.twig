@@ -3,7 +3,12 @@
     <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/show.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/title.css') }}">
-    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+    <script>document.documentElement.className = "js";
+        var supportsCssVars = function () {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 
     <link rel="script" href="assets/js/home.js">
     <header class="v-header container">
@@ -20,36 +25,34 @@
             <!-- Learn more button -->
 
             <div class="demo-2">
-                <main>
-                    <div class="content">
-                        <svg class="distort" width="350" height="450" viewBox="0 0 350 450">
-                            <filter id="distortionFilter">
-                                <feTurbulence type="fractalNoise" baseFrequency="0.01 0.003" numOctaves="5" seed="2"
-                                              stitchTiles="noStitch" x="0%" y="0%" width="100%" height="100%"
-                                              result="noise"/>
-                                <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R"
-                                                   yChannelSelector="B" x="0%" y="0%" width="100%" height="100%"
-                                                   filterUnits="userSpaceOnUse"/>
-                            </filter>
-                            <g filter="url(#distortionFilter)">
-                                <image class="distort__img" x="50" y="50" xlink:href="img/5.jpg" height="350"
-                                       width="250"/>
-                                <image class="distort__img" x="50" y="50" xlink:href="img/6.jpg" height="350"
-                                       width="250"/>
-                                <image class="distort__img" x="50" y="50" xlink:href="img/7.jpg" height="350"
-                                       width="250"/>
-                                <image class="distort__img" x="50" y="50" xlink:href="img/8.jpg" height="350"
-                                       width="250"/>
-                            </g>
-                        </svg>
-                        <nav class="menu">
-                            <a href="#" class="menu__link">Moscow</a>
-                            <a href="#" class="menu__link">Stockholm</a>
-                            <a href="#" class="menu__link">Istanbul</a>
-                            <a href="#" class="menu__link">Budapest</a>
-                        </nav>
-                    </div>
-                </main>
+                <div class="content">
+                    <svg class="distort" width="350" height="450" viewBox="0 0 350 450">
+                        <filter id="distortionFilter">
+                            <feTurbulence type="fractalNoise" baseFrequency="0.01 0.003" numOctaves="5" seed="2"
+                                          stitchTiles="noStitch" x="0%" y="0%" width="100%" height="100%"
+                                          result="noise"/>
+                            <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R"
+                                               yChannelSelector="B" x="0%" y="0%" width="100%" height="100%"
+                                               filterUnits="userSpaceOnUse"/>
+                        </filter>
+                        <g filter="url(#distortionFilter)">
+                            <image class="distort__img" x="50" y="50" xlink:href="img/5.jpg" height="350"
+                                   width="250"/>
+                            <image class="distort__img" x="50" y="50" xlink:href="img/6.jpg" height="350"
+                                   width="250"/>
+                            <image class="distort__img" x="50" y="50" xlink:href="img/7.jpg" height="350"
+                                   width="250"/>
+                            <image class="distort__img" x="50" y="50" xlink:href="img/8.jpg" height="350"
+                                   width="250"/>
+                        </g>
+                    </svg>
+                    <nav class="menu">
+                        <a href="#" class="menu__link">Moscow</a>
+                        <a href="#" class="menu__link">Stockholm</a>
+                        <a href="#" class="menu__link">Istanbul</a>
+                        <a href="#" class="menu__link">Budapest</a>
+                    </nav>
+                </div>
                 <script src="{{ asset('assets/js/charming.min.js') }}"></script>
                 <script src="{{ asset('assets/js/TweenMax.min.js') }}"></script>
                 <script src="{{ asset('assets/js/demo2.js') }}"></script>
