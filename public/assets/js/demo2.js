@@ -42,7 +42,7 @@
         constructor() {
             this.DOM = {
                 svg: document.querySelector('svg.distort'),
-                menu: document.querySelector('nav.menu')
+                menu: document.querySelector('nav.menu-porto')
             };
             this.DOM.imgs = [...this.DOM.svg.querySelectorAll('g > image')];
             this.DOM.menuLinks = [...this.DOM.menu.querySelectorAll('.menu__link')];
