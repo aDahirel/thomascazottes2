@@ -21,7 +21,7 @@ a:hover{
 .js .loading::before {
     content: '';
     position: fixed;
-    z-index: 100000;
+    z-index: 100;
     top: 0;
     left: 0;
     /*
@@ -34,7 +34,7 @@ a:hover{
 .js .loading::after {
     content: '';
     position: fixed;
-    z-index: 100000;
+    z-index: 100;
     top: 50%;
     left: 50%;
     width: 60px;

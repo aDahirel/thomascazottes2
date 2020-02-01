@@ -91,7 +91,7 @@
         render() {
             this.lastMousePos.translation.x = lerp(this.lastMousePos.translation.x, this.mousePos.x, 0.1);
             this.lastMousePos.translation.y = lerp(this.lastMousePos.translation.y, this.mousePos.y, 0.1);
-            this.DOM.svg.style.transform = `translateX(${(this.lastMousePos.translation.x-winsize.width/2)}px) translateY(${this.lastMousePos.translation.y-winsize.height/2}px)`;
+            this.DOM.svg.style.transform = `translateX(${(this.lastMousePos.translation.x-winsize.width/1.55)}px) translateY(${this.lastMousePos.translation.y-winsize.height/1.1}px)`;
             
             // Scale goes from 0 to 100 for mouseDistance values between 0 to 100
             this.lastMousePos.displacement.x = lerp(this.lastMousePos.displacement.x, this.mousePos.x, 0.1);
