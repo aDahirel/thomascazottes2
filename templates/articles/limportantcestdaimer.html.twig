@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<!-- FULL SCREEN VIDEO -->
+<iframe src="https://www.youtube.com/embed/crUVeL6DojQ?rel=0&amp;autoplay=1" frameborder="0" allow="autoplay;" allowfullscreen>Your browser doesn't support iframe.</iframe>
+
+<!-- FIRST BLOCK, TEXT + SMALL PICTURES -->
+<div class="d-flex">
+    <!-- TEXT BLOCK -->
+    <div class="infos p-3">
+        <h1>
+            L’IMPORTANT C’EST D’AIMER
+        </h1>
+        <h3>
+            Pierre William Glenn
+        </h3><br>
+        <p>
+            <b>Dirigé par </b> Pierre-William Glenn et Alexandre Marquand. <br>
+            <b>Directeur photographie : </b> Thomas Cazottes <br>
+            <b>Cadreurs : </b>Emile Tornior, Pierre Bonnafé <br>
+            <b>Assist Caméra :</b> Gaspard Soboul, Pierre Frink <br>
+            <b>Eletriciens:</b> Gaétan Berteaux, Nina Chiron <br>
+            <b>Caméra A : </b>Varicam LT ISO 800 V-log optique : CineAlta 50mm-85mm <br>
+            <b>Caméra B : </b>Eva 1 ISO 800 V-log  optique SIGMA HIGHT SPEED ZOOM 18-35mm <br>
+            <b>Machinerie : </b>Panthers S3 dolly
+        </p>
+    </div>
+    <!-- SMALL PICTURES -->
+    <div class="pictures">
+        <img class="p-2" width="644px" height="362px" src="{{ asset('limportantcestdaimer/ludivine_colle.jpg') }}" alt="Photo de Ludivine Colle">
+        <img class="p-2" width="644px" height="362px" src="{{ asset('limportantcestdaimer/michael_sisowath.jpg') }}" alt="Photo de Michael Sisowath">
+        <img class="p-2" width="644px" height="362px" src="{{ asset('limportantcestdaimer/plan1.jpg') }}" alt="Photo d'une scène">
+    </div>
+</div>
+
+<!-- LARGE PICTURE -->
+<div class="d-flex">
+    <img class="p-2 m-auto" width="1288px" height="724px" src="{{ asset('importantaimer.jpg') }}" alt="Photo mettant en scène les deux acteurs"><br>
+</div>
+
+<!-- BACK ANCHOR -->
+<p class="text-center" style="font-size: 30px;"><a href="/">Retour</a></p>
+
+{% endblock %}
