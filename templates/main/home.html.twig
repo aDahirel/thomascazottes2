@@ -2,6 +2,12 @@
 {% block header %}
     <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/show.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/title.css') }}">
+    <script>document.documentElement.className = "js";
+        var supportsCssVars = function () {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };</script>
 
     <link rel="script" href="assets/js/home.js">
     <header class="v-header container">
@@ -10,104 +16,55 @@
             <video id="video" src="vidtoo.mp4" autoplay="true" loop="true" muted></video>
         </div>
         <div class="header-overlay"></div>
-        <div class="header-content text-md-center">
+        <div class="header-cont text-md-center">
             <!-- Primary title -->
             <h1>Thomas Cazottes</h1>
             <!-- Secondary title -->
             <p class="direphot">Directeur de la photographie - Chef opérateur</p>
             <!-- Learn more button -->
-            <div class="text-button-container">
-                <a onmouseover="onMousseVideo()" onmouseleave="videoLeft()" id="text-buton1" class="text-button"
-                   href="">fiction</a>
-                <a onmouseover="onMousseVideo2()" onmouseleave="videoLeft()" id="text-buton2" class="text-button"
-                   href="">vidéo clip</a>
-                <a onmouseover="onMousseVideo()" onmouseleave="videoLeft()" id="text-buton3" class="text-button"
-                   href="">Documentaire</a>
-                <a onmouseover="onMousseVideo2()" onmouseleave="videoLeft()" id="text-buton4" class="text-button"
-                   href="">photographies</a>
+            <div class="demo-2">
+                <div class="content-title-header-new">
+                    <svg class="distort" width="350" height="450" viewBox="0 0 350 450">
+                        <filter id="distortionFilter">
+                            <feTurbulence type="fractalNoise" baseFrequency="0.01 0.003" numOctaves="5" seed="2"
+                                          stitchTiles="noStitch" x="%" y="0%" width="100%" height="100%"
+                                          result="noise"/>
+                            <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R"
+                                               yChannelSelector="B" x="0%" y="0%" width="100%" height="100%"
+                                               filterUnits="userSpaceOnUse"/>
+                        </filter>
+                        <g filter="url(#distortionFilter)">
+                            <image class="distort__img" x="50" y="50" xlink:href="imgfond.jpg" height="550"
+                                   width="450"/>
+                            <image class="distort__img" x="50" y="50" xlink:href="coteivoire.png" height="550"
+                                   width="450"/>
+                            <image class="distort__img" x="50" y="50" xlink:href="importantaimer.jpg" height="550"
+                                   width="450"/>
+                            <image class="distort__img" x="50" y="50" xlink:href="imgfond.jpg" height="550"
+                                   width="450"/>
+                        </g>
+                    </svg>
+                    <nav class="menu-porto">
+                        <a href="#" class="menu__link">Documentaire</a>
+                        <a href="#" class="menu__link">Clip</a>
+                        <a href="#contactid" class="menu__link">Contact</a>
+                        <a href="#" class="menu__link">Photographies</a>
+                    </nav>
+                </div>
+                <script src="{{ asset('assets/js/charming.min.js') }}"></script>
+                <script src="{{ asset('assets/js/TweenMax.min.js') }}"></script>
+                <script src="{{ asset('assets/js/demo2.js') }}"></script>
             </div>
-            <!-- Loading Part -->
-            <div id="loading" class="container-loading">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
+
+            <!-- FIN DU TEST  -->
             <section id="section10" class="demo">
                 <a href="#yees"><span></span></a>
             </section>
         </div>
     </header>
 
-    <script>
-        var test = 0;
-
-        function onMousseVideo() {
-            document.getElementById("loading").style.display = "block";
-            test = 1;
-            setTimeout(videoEnter, 2000);
-        }
-
-        function videoEnter() {
-            if (test == 1) {
-                clearTimeout(onMousseVideo);
-                document.getElementById("video").src = 'golf.mp4';
-            }
-        }
-
-        function onMousseVideo2() {
-            document.getElementById("loading").style.display = "block";
-            test = 1;
-            setTimeout(videoEnter2, 2000);
-        }
-
-        function videoEnter2() {
-            if (test == 1) {
-                clearTimeout(onMousseVideo);
-                document.getElementById("video").src = 'vidone.mp4';
-            }
-
-        }
-
-        function videoLeft() {
-            document.getElementById("loading").style.display = "none";
-            test = 0;
-            document.getElementById("video").src = 'vidtoo.mp4';
-        }
-
-
-        /* TEST setInterval pour changer le timeOut */
-        /*
-
-        var compteur = 0;
-        var secondes = 0;
-
-        $("div.vignette").hover(
-            function(){ // mouseenter
-                var id =  $(this).attr('id');
-
-                compteur = setInterval(function(){
-                    secondes ++;
-
-                    if ( secondes == 2 ){
-                        $("#" + id).find("div.edit-bar").show("slow");
-                    }
-                }, 1000);
-            },
-            function(){ // mouseleave
-                $(this).find("div.edit-bar").hide("slow");
-
-                clearInterval(compteur );
-
-                _seconds = 0; // ?? secondes
-            }
-        );
-
-        */
-    </script>
 {% endblock %}
 
 {% block body %}
-<div id="ancre"></div>
     {% include "main/show.html.twig" %}
-    {% include "main/footer.html.twig" %}
 {% endblock %}

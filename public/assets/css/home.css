@@ -50,23 +50,23 @@ body{
     top:0;
     left:0;
     width:100vw;
-    z-index:1;
+    z-index:1000000000000000000000000;
     background:#000000;
     opacity:0.5;
 }
 
-.header-content{
-    z-index:2;
+.header-cont{
+    z-index:100000000000000000000000;
     margin-left: auto;
     margin-right: auto;
 }
 
-.header-content h1{
+.header-cont h1{
     font-size:50px;
     margin-bottom:0;
 }
 
-.header-content p{
+.header-cont p{
     font-size:1.5rem;
     display:block;
     margin-bottom: 3em;
