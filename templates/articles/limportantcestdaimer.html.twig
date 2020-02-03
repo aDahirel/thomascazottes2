@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 {% block body %}
 <!-- FULL SCREEN VIDEO -->
-<iframe src="https://www.youtube.com/embed/crUVeL6DojQ" frameborder="0" allow="autoplay;" allowfullscreen>Your browser doesn't support iframe.</iframe>
+<iframe src="https://www.youtube.com/embed/crUVeL6DojQ?rel=0&amp;autoplay=1" frameborder="0" allow="autoplay;" allowfullscreen>Your browser doesn't support iframe.</iframe>
 
 <!-- FIRST BLOCK, TEXT + SMALL PICTURES -->
 <div class="d-flex">
@@ -40,27 +40,4 @@
 <!-- BACK ANCHOR -->
 <p class="text-center" style="font-size: 30px;"><a href="/">Retour</a></p>
 
-<style>
-    iframe {
-        display: block;       /* iframes are inline by default */
-        background: #000;
-        border: none;         /* Reset default border */
-        height: 100vh;        /* Viewport-relative units */
-        width: 100vw;
-    }    
-
-    .infos {
-        color: white;
-        width: 700px;
-        overflow-y: scroll;
-        margin: auto;
-    }
-    .pictures {
-        display: flex; 
-        flex-direction: column;
-        overflow-y: scroll;
-        margin: auto;
-        max-height: 362px;
-    }
-</style>
 {% endblock %}

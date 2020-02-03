@@ -1,0 +1,21 @@
+iframe {
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 90vh;        /* Viewport-relative units */
+    width: 100vw;
+}    
+
+.infos {
+    color: white;
+    width: 700px;
+    overflow-y: scroll;
+    margin: auto;
+}
+.pictures {
+    display: flex; 
+    flex-direction: column;
+
+    margin: auto;
+
+}

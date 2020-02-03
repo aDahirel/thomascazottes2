@@ -26,11 +26,20 @@ class MainController extends AbstractController
         ]);
     }
     /**
-     * @Route("/article", name="article")
+     * @Route("/limportantcestdaimer", name="limportantcestdaimer")
      */
-    public function article()
+    public function limportantcestdaimer()
     {
-        return $this->render('articles/article.html.twig', [
+        return $this->render('articles/limportantcestdaimer.html.twig', [
+        ]);
+    }
+
+    /**
+     * @Route("/cotedivoire", name="cotedivoire")
+     */
+    public function cotedivoire()
+    {
+        return $this->render('articles/cotedivoire.html.twig', [
         ]);
     }
 
