@@ -2,6 +2,12 @@
 {% block header %}
     <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/show.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/title.css') }}">
+    <script>document.documentElement.className = "js";
+        var supportsCssVars = function () {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };</script>
 
     <link rel="script" href="assets/js/home.js">
     <header class="v-header container">
@@ -10,28 +16,12 @@
             <video id="video" src="vidtoo.mp4" autoplay="true" loop="true" muted></video>
         </div>
         <div class="header-overlay"></div>
-        <div class="header-content text-md-center">
+        <div class="header-cont text-md-center">
             <!-- Primary title -->
             <h1>Thomas Cazottes</h1>
             <!-- Secondary title -->
             <p class="direphot">Directeur de la photographie - Chef opérateur</p>
             <!-- Learn more button -->
-<<<<<<< Updated upstream
-            <div class="text-button-container">
-                <a onmouseover="onMousseVideo()" onmouseleave="videoLeft()" id="text-buton1" class="text-button"
-                   href="">fiction</a>
-                <a onmouseover="onMousseVideo2()" onmouseleave="videoLeft()" id="text-buton2" class="text-button"
-                   href="">vidéo clip</a>
-                <a onmouseover="onMousseVideo()" onmouseleave="videoLeft()" id="text-buton3" class="text-button"
-                   href="">Documentaire</a>
-                <a onmouseover="onMousseVideo2()" onmouseleave="videoLeft()" id="text-buton4" class="text-button"
-                   href="">photographies</a>
-            </div>
-            <!-- Loading Part -->
-            <div id="loading" class="container-loading">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
 =======
 
             <div class="demo-2">
@@ -68,78 +58,14 @@
                 <script src="{{ asset('assets/js/demo2.js') }}"></script>
 >>>>>>> Stashed changes
             </div>
+
+            <!-- FIN DU TEST  -->
             <section id="section10" class="demo">
                 <a href="#yees"><span></span></a>
             </section>
         </div>
     </header>
 
-    <script>
-        var test = 0;
-
-        function onMousseVideo() {
-            document.getElementById("loading").style.display = "block";
-            test = 1;
-            setTimeout(videoEnter, 2000);
-        }
-
-        function videoEnter() {
-            if (test == 1) {
-                clearTimeout(onMousseVideo);
-                document.getElementById("video").src = 'golf.mp4';
-            }
-        }
-
-        function onMousseVideo2() {
-            document.getElementById("loading").style.display = "block";
-            test = 1;
-            setTimeout(videoEnter2, 2000);
-        }
-
-        function videoEnter2() {
-            if (test == 1) {
-                clearTimeout(onMousseVideo);
-                document.getElementById("video").src = 'vidone.mp4';
-            }
-
-        }
-
-        function videoLeft() {
-            document.getElementById("loading").style.display = "none";
-            test = 0;
-            document.getElementById("video").src = 'vidtoo.mp4';
-        }
-
-
-        /* TEST setInterval pour changer le timeOut */
-        /*
-
-        var compteur = 0;
-        var secondes = 0;
-
-        $("div.vignette").hover(
-            function(){ // mouseenter
-                var id =  $(this).attr('id');
-
-                compteur = setInterval(function(){
-                    secondes ++;
-
-                    if ( secondes == 2 ){
-                        $("#" + id).find("div.edit-bar").show("slow");
-                    }
-                }, 1000);
-            },
-            function(){ // mouseleave
-                $(this).find("div.edit-bar").hide("slow");
-
-                clearInterval(compteur );
-
-                _seconds = 0; // ?? secondes
-            }
-        );
-
-        */
-    </script>
 {% endblock %}
 
 {% block body %}
