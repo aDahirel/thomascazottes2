@@ -25,6 +25,17 @@ class MainController extends AbstractController
         return $this->render('main/home.html.twig', [
         ]);
     }
+
+    /**
+     * @Route("/gallery", name="gallery")
+     */
+    public function gallery()
+    {
+        return $this->render('main/gallery.html.twig', [
+
+        ]);
+    }
+
     /**
      * @Route("/limportantcestdaimer", name="limportantcestdaimer")
      */

@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+h1{
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-family: Helvetica;
+}
+.wrapper{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.cube{
+   height: 400px;
+   width: 300px;
+   margin: 25px;
+}
+.description{
+   height: 100px;
+   background-color: black;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+#return{
+   color: white;
+   font-size: 30px; 
+   text-align: center;
+   text-decoration: none;
+}
