@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<!-- FULL SCREEN VIDEO -->
+<iframe src="https://www.youtube.com/embed/DY4Zr3nDskc?rel=0&amp;autoplay=1" frameborder="0" allow="autoplay;" allowfullscreen>Your browser doesn't support iframe.</iframe>
+
+<!-- FIRST BLOCK, TEXT + SMALL PICTURES -->
+<div class="d-flex">
+    <!-- TEXT BLOCK -->
+    <div class="infos p-3">
+        <h1>
+            Côte d'Ivoire
+        </h1>
+        <h3>
+            Réalisateur
+        </h3><br>
+        <p>
+            <b>(texte ci-dessous exemple)</b><br>
+            <b>Dirigé par </b> Pierre-William Glenn et Alexandre Marquand. <br>
+            <b>Directeur photographie : </b> Thomas Cazottes <br>
+            <b>Cadreurs : </b>Emile Tornior, Pierre Bonnafé <br>
+            <b>Assist Caméra :</b> Gaspard Soboul, Pierre Frink <br>
+            <b>Eletriciens:</b> Gaétan Berteaux, Nina Chiron <br>
+            <b>Caméra A : </b>Varicam LT ISO 800 V-log optique : CineAlta 50mm-85mm <br>
+            <b>Caméra B : </b>Eva 1 ISO 800 V-log  optique SIGMA HIGHT SPEED ZOOM 18-35mm <br>
+            <b>Machinerie : </b>Panthers S3 dolly
+        </p>
+    </div>
+    <!-- LARGE PICTURE -->
+    <div class="pictures">
+        <img class="p-2 m-auto" width="648px" height="978px" src="{{ asset('cotedivoire/baignade.jpg') }}" alt="Photo mettant en scène les deux acteurs"><br>
+    </div>
+</div>
+
+<!-- SMALL PICTURES -->
+<div class="d-flex flex-wrap">
+    <img class="py-5 m-auto" width="972px" height="644px" src="{{ asset('cotedivoire/chaise.jpg') }}" alt="Photo de côte d'ivoire">
+    <img class="py-5 m-auto" width="1280px" height="720px"  src="{{ asset('cotedivoire/route.jpg') }}" alt="Photo de côte d'ivoire">
+    <img class="py-5 m-auto" width="972px" height="644px" src="{{ asset('cotedivoire/voiture.jpg') }}" alt="Photo de côte d'ivoire">
+    <img class="py-5 m-auto" width="1280px" height="720px" src="{{ asset('cotedivoire/homme.jpg') }}" alt="Photo de côte d'ivoire">
+    <img class="py-5 m-auto" width="972px" height="644px" src="{{ asset('cotedivoire/hamac.jpg') }}" alt="Photo de côte d'ivoire">
+    <img class="py-5 m-auto" width="1280px" height="720px" src="{{ asset('cotedivoire/cabane.jpg') }}" alt="Photo de côte d'ivoire">
+    <img class="py-5 m-auto" width="972px" height="953px" src="{{ asset('cotedivoire/bebe.jpg') }}" alt="Photo de côte d'ivoire">
+</div>
+
+<!-- BACK ANCHOR -->
+<p class="text-center" style="font-size: 30px;"><a href="/">Retour</a></p>
+
+{% endblock %}

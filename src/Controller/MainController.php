@@ -26,4 +26,32 @@ class MainController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/gallery", name="gallery")
+     */
+    public function gallery()
+    {
+        return $this->render('main/gallery.html.twig', [
+
+        ]);
+    }
+
+    /**
+     * @Route("/limportantcestdaimer", name="limportantcestdaimer")
+     */
+    public function limportantcestdaimer()
+    {
+        return $this->render('articles/limportantcestdaimer.html.twig', [
+        ]);
+    }
+
+    /**
+     * @Route("/cotedivoire", name="cotedivoire")
+     */
+    public function cotedivoire()
+    {
+        return $this->render('articles/cotedivoire.html.twig', [
+        ]);
+    }
+
 }

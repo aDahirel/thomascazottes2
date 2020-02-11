@@ -1,7 +1,39 @@
-{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/show.css') }}">
+{% endblock %}
 {% block body %}
+    <div class="container-article">
+        <div id="yees" class="article">
+            <div class="image-article">
+                <!--  <img class="image-src" src="https://via.placeholder.com/1400x600" alt="">-->
+                <img class="image-src" src="{{ asset('articleImportant.png') }}" alt="">
+            </div>
+            <div class="text-article">
+                <h1 class="title-article white">
+                    L'important c'est d'aimer
+                </h1>
+                <div class="button-article-container text-black">
+                    <a class="button-article" href="/limportantcestdaimer">regardez</a>
+                </div>
+            </div>
+        </div>
 
-    <h1 id="yees">wesh larticle</h1>
-    <p>faire le site</p>
+        <div class="article">
+            <div class="image-article">
+                <img class="image-src" src="{{ asset('coteivoire.png') }}" alt="">
+            </div>
+            <div class="text-article">
+                <h1 class="title-article black">
+                    Côte d'Ivoire
+                </h1>
+                <div class="button-article-container text-black">
+                
+                    <a class="button-article-b" style="border: black; text-decoration: none" href="/cotedivoire">regardez</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 {% endblock %}
