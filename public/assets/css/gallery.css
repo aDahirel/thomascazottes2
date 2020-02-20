@@ -2,12 +2,12 @@ body{
     margin: 0;
     padding: 0;
     background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
 }
 h1{
     text-align: center;
     padding: 30px;
     color: white;
-    font-family: Helvetica;
 }
 .wrapper{
    display: flex;
@@ -15,17 +15,26 @@ h1{
    justify-content: space-around;
 }
 .cube{
-   height: 400px;
-   width: 300px;
-   margin: 25px;
+   height: 180px;
+   width: 260px;
+   margin-left: 5px;
+   margin-right: 5px;
+   margin-bottom: 50px;
 }
 .description{
-   height: 100px;
-   background-color: black;
+   display: block;
+   width: 260px;
    color: white;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
+   font-family: sans-serif;
+}
+.description-top{
+   display: flex; 
+   justify-content: space-between; 
+   padding-top: 15px;
+}
+.description-bottom{
+   display: flex; 
+   justify-content: space-between;
 }
 #return{
    color: white;
