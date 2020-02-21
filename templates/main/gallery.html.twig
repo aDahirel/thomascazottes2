@@ -1,13 +1,17 @@
 {% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('assets/css/gallery.css') }}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('assets/css/gallery.css') }}">
 {% endblock %}
 {% block body %}
 <h1>Photographies</h1>
+
 <div>
-    <div class="wrapper" style="font-size: 13px;">
-        <div class="cube" style="margin-top: 15px;">
+    <div class="wrapper">
+        <div class="cube mt-3">
             {# Picture #}
-            <img src="https://picsum.photos/260/180" alt="photo">
+            <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
             {# Description #}
             <div class="description">
                 <div class="description-top">
@@ -28,9 +32,9 @@
                 </div>
             </div>
         </div>
-        <div class="cube" style="margin-top: 15px;">
+        <div class="cube mt-3">
             {# Picture #}
-            <img src="https://picsum.photos/260/180" alt="photo">
+            <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
             {# Description #}
             <div class="description">
                 <div class="description-top">
@@ -51,9 +55,9 @@
                 </div>
             </div>
         </div>
-        <div class="cube" style="margin-top: 15px;">
+        <div class="cube mt-3">
             {# Picture #}
-            <img src="https://picsum.photos/260/180" alt="photo">
+            <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
             {# Description #}
             <div class="description">
                 <div class="description-top">
@@ -74,9 +78,9 @@
                 </div>
             </div>
         </div>
-        <div class="cube" style="margin-top: 15px;">
+        <div class="cube mt-3">
             {# Picture #}
-            <img src="https://picsum.photos/260/180" alt="photo">
+            <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
             {# Description #}
             <div class="description">
                 <div class="description-top">
@@ -97,9 +101,9 @@
                 </div>
             </div>
         </div>
-        <div class="cube" style="margin-top: 15px;">
+        <div class="cube mt-3">
             {# Picture #}
-            <img src="https://picsum.photos/260/180" alt="photo">
+            <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
             {# Description #}
             <div class="description">
                 <div class="description-top">
@@ -120,9 +124,9 @@
                 </div>
             </div>
         </div>
-        <div class="cube" style="margin-top: 15px;">
+        <div class="cube mt-3">
             {# Picture #}
-            <img src="https://picsum.photos/260/180" alt="photo">
+            <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
             {# Description #}
             <div class="description">
                 <div class="description-top">
@@ -143,9 +147,9 @@
                 </div>
             </div>
         </div>
-        <div class="cube" style="margin-top: 15px;">
+        <div class="cube mt-3">
             {# Picture #}
-            <img src="https://picsum.photos/260/180" alt="photo">
+            <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
             {# Description #}
             <div class="description">
                 <div class="description-top">
@@ -166,9 +170,9 @@
                 </div>
             </div>
         </div>
-        <div class="cube" style="margin-top: 15px;">
+        <div class="cube mt-3">
             {# Picture #}
-            <img src="https://picsum.photos/260/180" alt="photo">
+            <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
             {# Description #}
             <div class="description">
                 <div class="description-top">
@@ -189,9 +193,9 @@
                 </div>
             </div>
         </div>
-        <div class="cube" style="margin-top: 15px;">
+        <div class="cube mt-3">
             {# Picture #}
-            <img src="https://picsum.photos/260/180" alt="photo">
+            <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
             {# Description #}
             <div class="description">
                 <div class="description-top">
@@ -212,9 +216,9 @@
                 </div>
             </div>
         </div>
-        <div class="cube" style="margin-top: 15px;">
+        <div class="cube mt-3">
             {# Picture #}
-            <img src="https://picsum.photos/260/180" alt="photo">
+            <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
             {# Description #}
             <div class="description">
                 <div class="description-top">
@@ -237,7 +241,44 @@
         </div>
     </div>
 </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+  
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
 
 <!-- BACK ANCHOR -->
-<p style="text-align: center;"><a  id="return" href="/">Retour</a></pstyle="text-align: center;">
+<p class="mt-5" style="text-align: center;"><a  id="return" href="/">Retour</a></pstyle="text-align: center;"> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
 {% endblock %}
