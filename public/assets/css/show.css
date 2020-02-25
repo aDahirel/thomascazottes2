@@ -5,7 +5,6 @@
     padding-bottom: 15px;
 }
 
-
 .image-article {
     width: 100%;
 }
@@ -32,13 +31,6 @@
     font-weight: 200;
 }
 
-.white {
-    color: white;
-}
-
-.black {
-    color: black;
-}
 
 /* ---------------------------  BUTTON WHITE  -------------------------------------- */
 
@@ -56,13 +48,17 @@
     text-decoration: none;
 }
 
+
 /** hover white */
+
 .button-article:nth-child(1) {
     color: #FFFFFF;
+    font-size: 23px;
     transition: .3s all;
 }
 
-.button-article:nth-child(1):before, a:nth-child(1):after {
+.button-article:nth-child(1):before,
+a:nth-child(1):after {
     content: '';
     position: absolute;
     width: 0%;
@@ -85,9 +81,11 @@
     letter-spacing: 2px;
 }
 
-.button-article:nth-child(1):hover:after, a:nth-child(1):hover:before {
+.button-article:nth-child(1):hover:after,
+a:nth-child(1):hover:before {
     width: 100%;
 }
+
 
 /* ---------------------------  BUTTON BLACK  -------------------------------------- */
 
@@ -105,13 +103,17 @@
     text-decoration: none;
 }
 
+
 /** hover white */
+
 .button-article-b:nth-child(1) {
     color: #000000;
     transition: .3s all;
+    font-size: 23px;
 }
 
-.button-article-b:nth-child(1):before, a:nth-child(1):after {
+.button-article-b:nth-child(1):before,
+a:nth-child(1):after {
     content: '';
     position: absolute;
     width: 0%;
@@ -134,6 +136,7 @@
     letter-spacing: 2px;
 }
 
-.button-article-b:nth-child(1):hover:after, a:nth-child(1):hover:before {
+.button-article-b:nth-child(1):hover:after,
+a:nth-child(1):hover:before {
     width: 100%;
 }
