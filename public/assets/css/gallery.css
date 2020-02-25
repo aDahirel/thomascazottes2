@@ -3,11 +3,7 @@ body{
     padding: 0;
     background-color: black;
 }
-h1{
-    text-align: center;
-    padding: 30px;
-    color: white;
-}
+
 .wrapper{
    display: flex;
    flex-wrap: wrap;
@@ -73,7 +69,6 @@ h1{
    margin: auto;
    display: block;
    width: 80%;
-   max-width: 700px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
