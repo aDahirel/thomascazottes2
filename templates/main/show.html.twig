@@ -1,39 +1,39 @@
-{% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('assets/css/show.css') }}">
-{% endblock %}
 {% block body %}
-    <div class="container-article">
-        <div id="yees" class="article">
-            <div class="image-article">
-                <!--  <img class="image-src" src="https://via.placeholder.com/1400x600" alt="">-->
-                <img class="image-src" src="{{ asset('articleImportant.png') }}" alt="">
-            </div>
-            <div class="text-article">
-                <h1 class="title-article white">
-                    L'important c'est d'aimer
-                </h1>
-                <div class="button-article-container text-black">
-                    <a class="button-article" href="/limportantcestdaimer">regardez</a>
-                </div>
-            </div>
+<!-- Articles container -->
+<div class="container-article" id="anchor">
+    <div class="article">
+        <!-- Article background -->
+        <div class="image-article">
+            <img class="image-src" src="{{ asset('articleImportant.png') }}" alt="Image de l'article">
         </div>
-
-        <div class="article">
-            <div class="image-article">
-                <img class="image-src" src="{{ asset('coteivoire.png') }}" alt="">
-            </div>
-            <div class="text-article">
-                <h1 class="title-article black">
-                    Côte d'Ivoire
-                </h1>
-                <div class="button-article-container text-black">
-                
-                    <a class="button-article-b" style="border: black; text-decoration: none" href="/cotedivoire">regardez</a>
-                    
-                </div>
+        <!-- Article description -->
+        <div class="text-article">
+            <!-- Article title -->
+            <h1 class="title-article text-white">
+                L'important c'est d'aimer
+            </h1>
+            <!-- Article button -->
+            <div class="button-article-container text-black">
+                <a class="button-article" href="/limportantcestdaimer">Regardez</a>
             </div>
         </div>
     </div>
-
-
+    <div class="article">
+        <!-- Article background -->
+        <div class="image-article">
+            <img class="image-src" src="{{ asset('coteivoire.png') }}" alt="Image de l'article">
+        </div>
+        <!-- Article description -->
+        <div class="text-article">
+            <!-- Article title -->
+            <h1 class="title-article black">
+                Côte d'Ivoire
+            </h1>
+            <!-- Article button -->
+            <div class="button-article-container text-black">
+                <a class="button-article-b" style="border: black; text-decoration: none" href="/cotedivoire">Regardez</a>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

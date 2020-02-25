@@ -1,70 +1,58 @@
-{% extends 'base.html.twig' %}
-{% block header %}
-    <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/show.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/title.css') }}">
-    <script>document.documentElement.className = "js";
-        var supportsCssVars = function () {
-            var e, t = document.createElement("style");
-            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
-        };</script>
-
-    <link rel="script" href="assets/js/home.js">
-    <header class="v-header container">
-        <div class="fullscreen-video-wrap">
-            <!-- Video link -->
-            <video id="video" src="vidtoo.mp4" autoplay="true" loop="true" muted></video>
-        </div>
-        <div class="header-overlay"></div>
-        <div class="header-cont text-md-center">
-            <!-- Primary title -->
-            <h1>Thomas Cazottes</h1>
-            <!-- Secondary title -->
-            <p class="direphot">Directeur de la photographie - Chef opérateur</p>
-            <!-- Learn more button -->
-            <div class="demo-2">
-                <div class="content-title-header-new">
-                    <svg class="distort" width="350" height="450" viewBox="0 0 350 450">
-                        <filter id="distortionFilter">
-                            <feTurbulence type="fractalNoise" baseFrequency="0.01 0.003" numOctaves="5" seed="2"
-                                          stitchTiles="noStitch" x="%" y="0%" width="100%" height="100%"
-                                          result="noise"/>
-                            <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R"
-                                               yChannelSelector="B" x="0%" y="0%" width="100%" height="100%"
-                                               filterUnits="userSpaceOnUse"/>
-                        </filter>
-                        <g filter="url(#distortionFilter)">
-                            <image class="distort__img" x="50" y="50" xlink:href="imgfond.jpg" height="550"
-                                   width="450"/>
-                            <image class="distort__img" x="50" y="50" xlink:href="coteivoire.png" height="550"
-                                   width="450"/>
-                            <image class="distort__img" x="50" y="50" xlink:href="importantaimer.jpg" height="550"
-                                   width="450"/>
-                            <image class="distort__img" x="50" y="50" xlink:href="imgfond.jpg" height="550"
-                                   width="450"/>
-                        </g>
-                    </svg>
-                    <nav class="menu-porto">
-                        <a href="#" class="menu__link">Showreal</a>
-                        <a href="#yees" class="menu__link">Projets</a>
-                        <a href="#contactid" class="menu__link">Contact</a>
-                        <a href="/gallery" class="menu__link">Photographies</a>
-                    </nav>
-                </div>
-                <script src="{{ asset('assets/js/charming.min.js') }}"></script>
-                <script src="{{ asset('assets/js/TweenMax.min.js') }}"></script>
-                <script src="{{ asset('assets/js/demo2.js') }}"></script>
+{% extends 'base.html.twig' %} {% block body %}
+<!-- Header section -->
+<header class="v-header container">
+    <div class="fullscreen-video-wrap">
+        <!-- Video link -->
+        <video id="video" src="vidtoo.mp4" autoplay="true" loop="true" muted></video>
+    </div>
+    <div class="header-overlay"></div>
+    <div class="header-cont text-md-center">
+        <!-- Primary title -->
+        <h1>Thomas Cazottes</h1>
+        <!-- Secondary title -->
+        <p class="direphot">Directeur de la photographie - Chef opérateur</p>
+        <!-- Images on :hover -->
+        <div class="demo-2">
+            <div class="content-title-header-new">
+                <svg class="distort" width="350" height="450" viewBox="0 0 350 450">
+                    <filter id="distortionFilter">
+                        <feTurbulence type="fractalNoise" baseFrequency="0.01 0.003" numOctaves="5" seed="2" stitchTiles="noStitch" x="%" y="0%" width="100%" height="100%" result="noise" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse" />
+                    </filter>
+                    <g filter="url(#distortionFilter)">
+                        <image class="distort__img" x="50" y="50" xlink:href="imgfond.jpg" height="550" width="450" />
+                        <image class="distort__img" x="50" y="50" xlink:href="coteivoire.png" height="550" width="450" />
+                        <image class="distort__img" x="50" y="50" xlink:href="importantaimer.jpg" height="550" width="450" />
+                        <image class="distort__img" x="50" y="50" xlink:href="imgfond.jpg" height="550" width="450" />
+                    </g>
+                </svg>
+                <!-- Menu -->
+                <nav class="menu-porto">
+                    <a href="" class="menu__link">Showreal</a>
+                    <a href="#anchor" class="menu__link">Projets</a>
+                    <a href="#contactid" class="menu__link">Contact</a>
+                    <a href="/photographies" class="menu__link">Photographies</a>
+                </nav>
             </div>
-
-            <!-- FIN DU TEST  -->
-            <section id="section10" class="demo">
-                <a href="#yees"><span></span></a>
-            </section>
         </div>
-    </header>
-
-{% endblock %}
-
-{% block body %}
-    {% include "main/show.html.twig" %}
-{% endblock %}
+        <!-- Scroll button  -->
+        <section id="section10" class="demo">
+            <!-- Anchor  -->
+            <a href="#anchor"><span></span></a>
+        </section>
+    </div>
+</header>
+<!-- Script  -->
+<script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+        var e, t = document.createElement("style");
+        return t.innerHTML = "root: { --tmp-var: bold; }",
+            document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+    };
+</script>
+<script src="{{ asset('assets/js/charming.min.js') }}"></script>
+<script src="{{ asset('assets/js/TweenMax.min.js') }}"></script>
+<script src="{{ asset('assets/js/demo2.js') }}"></script>
+<!-- Include the site  -->
+{% include "main/show.html.twig" %} {% endblock %}

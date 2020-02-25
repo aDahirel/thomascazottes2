@@ -3,7 +3,6 @@ body{
     padding: 0;
     background-color: black;
 }
-
 .wrapper{
    display: flex;
    flex-wrap: wrap;
@@ -31,13 +30,6 @@ body{
    display: flex; 
    justify-content: space-between;
 }
-#return{
-   color: white;
-   font-size: 30px; 
-   text-align: center;
-   text-decoration: none;
-}
-
 
 /* Style the Image Used to Trigger the Modal */
 .myImg {
