@@ -56,6 +56,10 @@ body{
    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
+body.modal {
+   overflow: hidden;
+}
+
 /* Modal Content (Image) */
 .modal-content {
    margin: auto;
