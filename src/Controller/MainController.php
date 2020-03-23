@@ -27,7 +27,7 @@ class MainController extends AbstractController
     }
 
     /**
-     * @Route("/gallery", name="gallery")
+     * @Route("/photographies", name="gallery")
      */
     public function gallery()
     {

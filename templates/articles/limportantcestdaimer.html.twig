@@ -1,5 +1,5 @@
-{% extends 'base.html.twig' %}
-{% block body %}
+{% extends 'base.html.twig' %} {% block body %}
+<link rel="stylesheet" href="{{ asset('assets/css/gallery.css') }}">
 <!-- FULL SCREEN VIDEO -->
 <iframe src="https://www.youtube.com/embed/crUVeL6DojQ?rel=0&amp;autoplay=1" frameborder="0" allow="autoplay;" allowfullscreen>Your browser doesn't support iframe.</iframe>
 
@@ -7,21 +7,34 @@
 <div class="d-flex">
     <!-- TEXT BLOCK -->
     <div class="infos p-3">
-        <h1>
+        <h2>
             L’IMPORTANT C’EST D’AIMER
-        </h1>
+        </h2>
         <h3>
             Pierre William Glenn
         </h3><br>
         <p>
-            <b>Dirigé par </b> Pierre-William Glenn et Alexandre Marquand. <br>
-            <b>Directeur photographie : </b> Thomas Cazottes <br>
-            <b>Cadreurs : </b>Emile Tornior, Pierre Bonnafé <br>
-            <b>Assist Caméra :</b> Gaspard Soboul, Pierre Frink <br>
-            <b>Eletriciens:</b> Gaétan Berteaux, Nina Chiron <br>
-            <b>Caméra A : </b>Varicam LT ISO 800 V-log optique : CineAlta 50mm-85mm <br>
-            <b>Caméra B : </b>Eva 1 ISO 800 V-log  optique SIGMA HIGHT SPEED ZOOM 18-35mm <br>
-            <b>Machinerie : </b>Panthers S3 dolly
+            <b>Dirigé par
+				</b> Pierre-William Glenn et Alexandre Marquand.
+            <br>
+            <b>Directeur photographie :
+				</b> Thomas Cazottes
+            <br>
+            <b>Cadreurs :
+				</b>Emile Tornior, Pierre Bonnafé
+            <br>
+            <b>Assist Caméra :</b> Gaspard Soboul, Pierre Frink
+            <br>
+            <b>Eletriciens:</b> Gaétan Berteaux, Nina Chiron
+            <br>
+            <b>Caméra A :
+				</b>Varicam LT ISO 800 V-log optique : CineAlta 50mm-85mm
+            <br>
+            <b>Caméra B :
+				</b>Eva 1 ISO 800 V-log optique SIGMA HIGHT SPEED ZOOM 18-35mm
+            <br>
+            <b>Machinerie :
+				</b>Panthers S3 dolly
         </p>
     </div>
     <!-- SMALL PICTURES -->
@@ -32,12 +45,371 @@
     </div>
 </div>
 
-<!-- LARGE PICTURE -->
-<div class="d-flex">
-    <img class="p-2 m-auto" width="1288px" height="724px" src="{{ asset('importantaimer.jpg') }}" alt="Photo mettant en scène les deux acteurs"><br>
+
+<!-- Photographies -->
+<div class="wrapper">
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    1
+                </div>
+                <div>
+                    <b>PARIS 2018</b> T-MAX 400
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    6
+                </div>
+                <div>
+                    <b>→</b> 6A
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    2
+                </div>
+                <div>
+                    <b>PARIS 2018</b> T-MAX 400
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    7
+                </div>
+                <div>
+                    <b>→</b> 7A
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    3
+                </div>
+                <div>
+                    <b>PARIS 2018</b> T-MAX 400
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    8
+                </div>
+                <div>
+                    <b>→</b> 9A
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    4
+                </div>
+                <div>
+                    <b>PARIS 2018</b> T-MAX 400
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    9
+                </div>
+                <div>
+                    <b>→</b> 9A
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    5
+                </div>
+                <div>
+                    <b>PARIS 2018</b> T-MAX 400
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    10
+                </div>
+                <div>
+                    <b>→</b> 10A
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    6
+                </div>
+                <div>
+                    <b>PARIS 2018</b> T-MAX 400
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    11
+                </div>
+                <div>
+                    <b>→</b> 11A
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    2
+                </div>
+                <div>
+                    <b>PARIS 2018</b> T-MAX 400
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    7
+                </div>
+                <div>
+                    <b>→</b> 7A
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    3
+                </div>
+                <div>
+                    <b>PICARDIE 2018</b> GOLD 200
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    8
+                </div>
+                <div>
+                    <b>→</b> 9A
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    4
+                </div>
+                <div>
+                    <b>PICARDIE 2018</b> GOLD 200
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    9
+                </div>
+                <div>
+                    <b>→</b> 9A
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    5
+                </div>
+                <div>
+                    <b>PARIS 2018</b> FUJICOLOR 200
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    10
+                </div>
+                <div>
+                    <b>→</b> 10A
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    5
+                </div>
+                <div>
+                    <b>PARIS 2018</b> FUJICOLOR 200
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    10
+                </div>
+                <div>
+                    <b>→</b> 10A
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    5
+                </div>
+                <div>
+                    <b>PARIS 2018</b> FUJICOLOR 200
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    10
+                </div>
+                <div>
+                    <b>→</b> 10A
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    5
+                </div>
+                <div>
+                    <b>PARIS 2018</b> FUJICOLOR 200
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    10
+                </div>
+                <div>
+                    <b>→</b> 10A
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    5
+                </div>
+                <div>
+                    <b>PARIS 2018</b> FUJICOLOR 200
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    10
+                </div>
+                <div>
+                    <b>→</b> 10A
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cube mt-3">
+        <!-- Picture -->
+        <img src="photographies/programmation.jpg" class="myImg" alt="Texte">
+        <!-- Description -->
+        <div class="description">
+            <div class="description-top">
+                <div style="margin-left: 60px">
+                    5
+                </div>
+                <div>
+                    <b>PARIS 2018</b> FUJICOLOR 200
+                </div>
+            </div>
+            <div class="description-bottom">
+                <div style="margin-left: 40px">
+                    10
+                </div>
+                <div>
+                    <b>→</b> 10A
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- BACK ANCHOR -->
-<p class="text-center" style="font-size: 30px;"><a href="/">Retour</a></p>
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
+    <!-- The Close Button -->
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+<!-- BACK -->
+<div class="button-article-container text-black m-5">
+    <a class="button-article" href="/">Retour</a>
+</div>
 {% endblock %}
