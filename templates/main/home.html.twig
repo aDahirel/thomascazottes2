@@ -14,18 +14,18 @@
         <!-- Images on :hover -->
         <div class="demo-2">
             <div class="content-title-header-new">
-                <svg class="distort" width="350" height="450" viewBox="0 0 350 450">
-                    <filter id="distortionFilter">
-                        <feTurbulence type="fractalNoise" baseFrequency="0.01 0.003" numOctaves="5" seed="2" stitchTiles="noStitch" x="%" y="0%" width="100%" height="100%" result="noise" />
-                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse" />
-                    </filter>
-                    <g filter="url(#distortionFilter)">
-                        <image class="distort__img" x="50" y="50" xlink:href="imgfond.jpg" height="550" width="450" />
-                        <image class="distort__img" x="50" y="50" xlink:href="coteivoire.png" height="550" width="450" />
-                        <image class="distort__img" x="50" y="50" xlink:href="importantaimer.jpg" height="550" width="450" />
-                        <image class="distort__img" x="50" y="50" xlink:href="imgfond.jpg" height="550" width="450" />
-                    </g>
-                </svg>
+                <svg class="distort" width="350" height="450" viewbox="0 0 350 450">
+						<filter id="distortionFilter">
+							<feTurbulence type="fractalNoise" basefrequency="0.01 0.003" numoctaves="5" seed="2" stitchtiles="noStitch" x="%" y="0%" width="100%" height="100%" result="noise"/>
+							<feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xchannelselector="R" ychannelselector="B" x="0%" y="0%" width="100%" height="100%" filterunits="userSpaceOnUse"/>
+						</filter>
+						<g filter="url(#distortionFilter)">
+							<image class="distort__img" x="50" y="50" xlink:href="imgfond.jpg" height="550" width="450"/>
+							<image class="distort__img" x="50" y="50" xlink:href="coteivoire.png" height="550" width="450"/>
+							<image class="distort__img" x="50" y="50" xlink:href="importantaimer.jpg" height="550" width="450"/>
+							<image class="distort__img" x="50" y="50" xlink:href="imgfond.jpg" height="550" width="450"/>
+						</g>
+					</svg>
                 <!-- Menu -->
                 <nav class="menu-porto">
                     <a href="" class="menu__link">Showreal</a>
@@ -38,7 +38,9 @@
         <!-- Scroll button  -->
         <section id="section10" class="demo">
             <!-- Anchor  -->
-            <a href="#anchor"><span></span></a>
+            <a href="#anchor">
+                <span></span>
+            </a>
         </section>
     </div>
 </header>
@@ -46,9 +48,13 @@
 <script>
     document.documentElement.className = "js";
     var supportsCssVars = function() {
-        var e, t = document.createElement("style");
+        var e,
+            t = document.createElement("style");
         return t.innerHTML = "root: { --tmp-var: bold; }",
-            document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+            document.head.appendChild(t),
+            e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")),
+            t.parentNode.removeChild(t),
+            e
     };
 </script>
 <script src="{{ asset('assets/js/charming.min.js') }}"></script>
