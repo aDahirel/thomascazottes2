@@ -38,7 +38,9 @@
         <!-- Scroll button  -->
         <section id="section10" class="demo">
             <!-- Anchor  -->
-            <a href="#anchor"><span></span></a>
+            <a href="#anchor">
+                <span></span>
+            </a>
         </section>
     </div>
 </header>
@@ -46,9 +48,13 @@
 <script>
     document.documentElement.className = "js";
     var supportsCssVars = function() {
-        var e, t = document.createElement("style");
+        var e,
+            t = document.createElement("style");
         return t.innerHTML = "root: { --tmp-var: bold; }",
-            document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+            document.head.appendChild(t),
+            e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")),
+            t.parentNode.removeChild(t),
+            e
     };
 </script>
 <script src="{{ asset('assets/js/charming.min.js') }}"></script>
