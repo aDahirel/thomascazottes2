@@ -139,6 +139,10 @@ a:focus {
 }
 */
 
+.distort__img{
+    display: hidden;
+}
+
 .distort {
     position: absolute;
     pointer-events: none;

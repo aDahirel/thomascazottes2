@@ -10,15 +10,16 @@ body{
    font-size: 13px;
 }
 .cube{
-   height: 180px;
-   width: 260px;
+   height: 234px;
+   width: 338px;
    margin-left: 5px;
    margin-right: 5px;
    margin-bottom: 50px;
 }
+
 .description{
    display: block;
-   width: 260px;
+   width: 338px;
    color: white;
 }
 .description-top{
@@ -35,8 +36,8 @@ body{
 .myImg {
    cursor: pointer;
    transition: 0.3s;
-   height: 180px;
-   width: 260px;
+   height: 234px;
+   width: 338px;
 }
 
 .myImg:hover {opacity: 0.7;}
@@ -95,6 +96,9 @@ body.modal {
    color: #bbb;
    text-decoration: none;
    cursor: pointer;
+}
+#img01{
+   max-width: 100vh;
 }
 
 /* 100% Image Width on Smaller Screens */
