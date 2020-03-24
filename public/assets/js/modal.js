@@ -13,8 +13,6 @@ $('.myImg').click(function(){
 
     // TODO trouver une soluttion pour empecher scroll en arriere plan quand le modal est ouvert. 
 
-    //document.getElementById("bodyIden").style.background = "red";
-    //document.getElementById("bodyIden").style.overflow = "hidden";
 });
 
 // Get the <span> element that closes the modal
