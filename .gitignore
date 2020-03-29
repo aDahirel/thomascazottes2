@@ -26,3 +26,4 @@ symfony.lock
 /.web-server-pid
 ###< symfony/web-server-bundle ###
 .idea/thomascazottes2.iml
+*.iml
