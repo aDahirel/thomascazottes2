@@ -9,12 +9,10 @@ $('.myImg').click(function(){
     var newSrc = this.src;
     newSrc = newSrc.replace('.jpg', 'Grand.jpg');
     modalImg.attr('src', newSrc);
-    captionText.innerHTML = this.alt;
+    captionText = this.alt;
 
     // TODO trouver une soluttion pour empecher scroll en arriere plan quand le modal est ouvert. 
 
-    //document.getElementById("bodyIden").style.background = "red";
-    //document.getElementById("bodyIden").style.overflow = "hidden";
 });
 
 // Get the <span> element that closes the modal

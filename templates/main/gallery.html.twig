@@ -1,44 +1,41 @@
 {% extends "base.html.twig" %} {% block body %}
-<div class="wrapper">
-    {% for i in 1..10 %}
-        <div class="cube mt-3">
-            <!-- Picture -->
-            <img src="photographies/cropImagedForGallery.jpg" class="myImg" alt="Texte">
-            <!-- Description -->
-            <div class="description">
-                <div class="description-top">
-                    <div style="margin-left: 60px">
-                        1
+    <div class="wrapper">
+        {% for i in 1..50 %}
+            <div class="cube mt-3">
+                <!-- Picture -->
+                <img src="photographies/MIGNATURE/SITE-GALLERIENATIF--({{i}}-of-50).jpg" class="myImg" alt="Texte">
+                <!-- Description -->
+                <div class="description">
+                    <div class="description-top">
+                        <div style="margin-left: 60px">
+                            1
+                        </div>
+                        <div>
+                            <b>PARIS 2018</b> T-MAX 400
+                        </div>
                     </div>
-                    <div>
-                        <b>PARIS 2018</b> T-MAX 400
-                    </div>
-                </div>
-                <div class="description-bottom">
-                    <div style="margin-left: 40px">
-                        6
-                    </div>
-                    <div>
-                        <b>→</b> 6A
+                    <div class="description-bottom">
+                        <div style="margin-left: 40px">
+                            {{i}}
+                        </div>
+                        <div>
+                            <b>→</b> {{i}}A
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
 
-</div>
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-    <!-- The Close Button -->
-    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-    <!-- Modal Content (The Image) -->
-    <img class="modal-content" id="img01">
-    <!-- Modal Caption (Image Text) -->
-    <div id="caption"></div>
-</div>
-<!-- Back -->
-<div class="button-article-container text-black m-5">
-    <a class="button-article" href="/" style="font-size: 23px;">Retour</a>
-</div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01" >
+    </div>
+    <!-- Back -->
+    <div class="button-article-container text-black m-5">
+        <a class="button-article" href="/" style="font-size: 23px;">Retour</a>
+    </div>
 {% endblock %}

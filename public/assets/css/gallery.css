@@ -10,7 +10,7 @@ body{
    font-size: 13px;
 }
 .cube{
-   height: 234px;
+   height: 226px;
    width: 338px;
    margin-left: 5px;
    margin-right: 5px;
@@ -36,8 +36,11 @@ body{
 .myImg {
    cursor: pointer;
    transition: 0.3s;
+   width: 100%;
+   /*
    height: 234px;
    width: 338px;
+    */
 }
 
 .myImg:hover {opacity: 0.7;}
@@ -47,7 +50,7 @@ body{
    display: none; /* Hidden by default */
    position: fixed; /* Stay in place */
    z-index: 1; /* Sit on top */
-   padding-top: 100px; /* Location of the box */
+   padding-top: 60px; /* Location of the box */
    left: 0;
    top: 0;
    width: 100%; /* Full width */
@@ -65,7 +68,6 @@ body.modal {
 .modal-content {
    margin: auto;
    display: block;
-   width: 80%;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -98,7 +100,9 @@ body.modal {
    cursor: pointer;
 }
 #img01{
-   max-width: 100vh;
+   width: auto;
+   max-height: 90vh;
+   max-width: 90vw;
 }
 
 /* 100% Image Width on Smaller Screens */
