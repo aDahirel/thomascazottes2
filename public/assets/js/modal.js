@@ -9,7 +9,7 @@ $('.myImg').click(function(){
     var newSrc = this.src;
     newSrc = newSrc.replace('.jpg', 'Grand.jpg');
     modalImg.attr('src', newSrc);
-    captionText.innerHTML = this.alt;
+    captionText = this.alt;
 
     // TODO trouver une soluttion pour empecher scroll en arriere plan quand le modal est ouvert. 
 
