@@ -2,13 +2,6 @@ body{
     background: #000000;
 }
 
-.none-style-link{
-    font-weight: 300;
-    color: white;
-    transition-duration: 0.3s;
-    text-decoration: none;
-}
-
-.none-style-link:hover{
+.list-unstyled:hover{
     color: grey;
 }
