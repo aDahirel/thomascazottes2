@@ -3,7 +3,7 @@
     <div class="" id="anchor">
         <div class="article">
             <!-- Article background -->
-            <div class="image-article">
+            <div class="image-article" id="myBox">
                 <img class="image-src" src="{{ asset('articleImportant.png') }}" alt="Image de l'article">
             </div>
             <!-- Article description -->
@@ -14,13 +14,13 @@
                 </h1>
                 <!-- Article button -->
                 <div class="button-article-container">
-                    <a class="button-article" href="/limportantcestdaimer">Regardez</a>
+                    <a id="goArticle" class="button-article" href="/limportantcestdaimer">Regardez</a>
                 </div>
             </div>
         </div>
         <div class="article">
             <!-- Article background -->
-            <div class="image-article">
+            <div class="image-article" id="myBox2">
                 <img class="image-src" src="{{ asset('coteivoire.png') }}" alt="Image de l'article">
             </div>
             <!-- Article description -->
@@ -31,14 +31,14 @@
                 </h1>
                 <!-- Article button -->
                 <div class="button-article-container text-black">
-                    <a class="button-article-b" style="border: black; text-decoration: none"
+                    <a id="goArticle2" class="button-article-b" style="border: black; text-decoration: none"
                        href="/cotedivoire">Regardez</a>
                 </div>
             </div>
         </div>
         <div class="article">
             <!-- Article background -->
-            <div class="image-article">
+            <div class="image-article" id="myBox3">
                 <img class="image-src" src="{{ asset('SITE-NY-COUV-NATIF--(1-of-1).jpg') }}" alt="Image de l'article">
             </div>
             <!-- Article description -->
@@ -49,10 +49,32 @@
                 </h1>
                 <!-- Article button -->
                 <div class="button-article-container text-black">
-                    <a class="button-article" style="border: black; text-decoration: none"
+                    <a id="goArticle3" class="button-article" style="border: black; text-decoration: none"
                        href="/cotedivoire">Regardez</a>
                 </div>
             </div>
         </div>
     </div>
 {% endblock %}
+{% block javascripts %}
+    <script>
+        document.getElementById('myBox').addEventListener('click', function () {
+            var link = document.getElementById("goArticle").getAttribute("href");
+            location.href = link;
+        }, false);
+        document.getElementById("myBox").style.cursor = "pointer";
+        document.getElementById('myBox2').addEventListener('click', function () {
+            var link = document.getElementById("goArticle2").getAttribute("href");
+            location.href = link;
+        }, false);
+        document.getElementById("myBox2").style.cursor = "pointer";
+        document.getElementById('myBox3').addEventListener('click', function () {
+            var link = document.getElementById("goArticle3").getAttribute("href");
+            location.href = link;
+        }, false);
+        document.getElementById("myBox3").style.cursor = "pointer";
+    </script>
+
+{% endblock %}
+
+
