@@ -1,32 +1,58 @@
-{% extends "base.html.twig" %}
 {% block body %}
     <div class="wrapper">
-        {% for i in 1..50 %}
-            <div class="cube mt-3">
-                <!-- Picture -->
-                <img src="photographies/MIGNATURE/SITE-GALLERIENATIF--({{i}}-of-50).jpg" class="myImg" alt="Texte">
-                <!-- Description -->
-                <div class="description">
-                    <div class="description-top">
-                        <div style="margin-left: 60px">
-                            1
+        {% if files_name is null %}
+            {% for i in 1..50 %}
+                <div class="cube mt-3">
+                    <!-- Picture -->
+                    <img src="photographies/SITE-GALLERIENATIF--({{i}}-of-50).jpg" class="myImg" alt="Texte">
+                    <!-- Description -->
+                    <div class="description">
+                        <div class="description-top">
+                            <div style="margin-left: 60px">
+                                1
+                            </div>
+                            <div>
+                                <b>PARIS 2018</b> T-MAX 400
+                            </div>
                         </div>
-                        <div>
-                            <b>PARIS 2018</b> T-MAX 400
-                        </div>
-                    </div>
-                    <div class="description-bottom">
-                        <div style="margin-left: 40px">
-                            {{i}}
-                        </div>
-                        <div>
-                            <b>→</b> {{i}}A
+                        <div class="description-bottom">
+                            <div style="margin-left: 40px">
+                                {{i}}
+                            </div>
+                            <div>
+                                <b>→</b> {{i}}A
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        {% endfor %}
-
+            {% endfor %}
+        {% else %}
+            {% for i in 1..nb_files %}
+                <div class="cube mt-3">
+                    <!-- Picture -->
+                    <img src="{{ files_name }}SITE-{{name}}-FOTGRAM-NATIF-({{i}}-of-{{nb_files}}).jpg" class="myImg" alt="Texte">
+                    <!-- Description -->
+                    <div class="description">
+                        <div class="description-top">
+                            <div style="margin-left: 60px">
+                                1
+                            </div>
+                            <div>
+                                <b>PARIS 2018</b> T-MAX 400
+                            </div>
+                        </div>
+                        <div class="description-bottom">
+                            <div style="margin-left: 40px">
+                                {{i}}
+                            </div>
+                            <div>
+                                <b>→</b> {{i}}A
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
     </div>
     <!-- The Modal -->
     <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">

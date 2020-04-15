@@ -12,8 +12,7 @@ iframe {
     margin: auto;
 }
 .pictures {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     margin: auto;
-
 }
