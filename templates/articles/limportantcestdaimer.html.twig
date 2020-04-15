@@ -1,54 +1,35 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    <link rel="stylesheet" href="{{ asset('assets/css/gallery.css') }}">
     <!-- FULL SCREEN VIDEO -->
-    <iframe src="https://www.youtube.com/embed/crUVeL6DojQ?rel=0&amp;autoplay=0" frameborder="0" allowfullscreen>Your
+    <iframe src="https://www.youtube.com/embed/crUVeL6DojQ?rel=0&amp;autoplay=0" frameborder="0" allowfullscreen
+            style="display: block; background: #000; border: none;height: 90vh;width: 100vw;">Your
         browser doesn't support iframe.
     </iframe>
-
     <!-- FIRST BLOCK, TEXT + SMALL PICTURES -->
-    <div class="d-flex row">
+    <div class="d-flex justify-content-around w-100 h-100" style="height: %; border: 1px solid blue">
         <!-- TEXT BLOCK -->
-        <div class="m-auto col-5" style="color: white">
-            <h2>
-                L’IMPORTANT C’EST D’AIMER
-            </h2>
-            <h3>
-                Pierre William Glenn
-            </h3><br>
-            <p>
-                <b>Dirigé par
-                </b> Pierre-William Glenn et Alexandre Marquand.
-                <br>
-                <b>Directeur photographie :
-                </b> Thomas Cazottes
-                <br>
-                <b>Cadreurs :
-                </b>Emile Tornior, Pierre Bonnafé
-                <br>
-                <b>Assist Caméra :</b> Gaspard Soboul, Pierre Frink
-                <br>
-                <b>Eletriciens:</b> Gaétan Berteaux, Nina Chiron
-                <br>
-                <b>Caméra A :
-                </b>Varicam LT ISO 800 V-log optique : CineAlta 50mm-85mm
-                <br>
-                <b>Caméra B :
-                </b>Eva 1 ISO 800 V-log optique SIGMA HIGHT SPEED ZOOM 18-35mm
-                <br>
-                <b>Machinerie :
-                </b>Panthers S3 dolly
+        <div class="d-flex flex-column justify-content-center align-self-center" style="color: white; border: 1px solid green">
+            <h2>L’IMPORTANT C’EST D’AIMER</h2>
+            <h3>Pierre William Glenn </h3><br>
+            <p><b>Dirigé par : </b>Pierre-William Glenn et Alexandre Marquand.</p>
+            <p><b>Directeur photographie : </b>Thomas Cazottes</p>
+            <p><b>Cadreurs : </b>Emile Tornior, Pierre Bonnafé</p>
+            <p><b>Assist Caméra : </b>Gaspard Soboul, Pierre Frink</p>
+            <p><b>Eletriciens : </b>Gaétan Berteaux, Nina Chiron</p>
+            <p><b>Caméra A : </b>Varicam LT ISO 800 V-log optique : CineAlta 50mm-85mm</p>
+            <p><b>Caméra B : </b>Eva 1 ISO 800 V-log optique SIGMA HIGHT SPEED ZOOM 18-35mm</p>
+            <p><b>Machinerie : </b>Panthers S3 dolly</p>
             </p>
         </div>
         <!-- SMALL PICTURES -->
-        <div class="d-flex flex-column m-auto col-7">
-            <img class="p-2" width="700px" height="467px"
+        <div class="d-flex flex-column justify-content-center align-items-center" style="border: 1px solid red">
+            <img class="mb-3" width="700px" height="467px"
                  src="{{ asset('limportantcestdaimer/SITE-IMPORTANTCAIMER-FOTGRAM-NATIF-(1-of-8).jpg') }}"
                  alt="Photo de Ludivine Colle">
-            <img class="p-2" width="700px" height="467px"
+            <img class="mb-3" width="700px" height="467px"
                  src="{{ asset('limportantcestdaimer/SITE-IMPORTANTCAIMER-FOTGRAM-NATIF-(3-of-8).jpg') }}"
                  alt="Photo de Michael Sisowath">
-            <img class="p-2" width="700px" height="467px"
+            <img class="mb-3" width="700px" height="467px"
                  src="{{ asset('limportantcestdaimer/SITE-IMPORTANTCAIMER-FOTGRAM-NATIF-(6-of-8).jpg') }}"
                  alt="Photo d'une scène">
         </div>
