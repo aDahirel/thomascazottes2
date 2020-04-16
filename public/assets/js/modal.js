@@ -7,14 +7,13 @@ var captionText = document.getElementById("caption");
 $('.myImg').click(function(){
     modal.style.display = "block";
     var newSrc = this.src;
-    if (newSrc.replace('.jpg', 'Grand.jpg')){
-        newSrc = newSrc.replace('.jpg', 'Grand.jpg');
+    if (newSrc.replace('MIGNA', 'NATIF')){
+        var modalSrc = newSrc.replace('MIGNA', 'NATIF') ;
     }
     else {
-        newSrc = newSrc.replace('MIGNA', 'NATIF');
+        var modalSrc = newSrc.replace('.jpg', 'Grand.jpg');
     }
-
-    modalImg.attr('src', newSrc);
+    modalImg.attr('src', modalSrc);
     captionText = this.alt;
 
     // TODO trouver une soluttion pour empecher scroll en arriere plan quand le modal est ouvert. 
