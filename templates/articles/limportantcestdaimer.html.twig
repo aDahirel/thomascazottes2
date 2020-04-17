@@ -1,31 +1,39 @@
 {% extends 'base.html.twig' %}
 {% block body %}
     <!-- FULL SCREEN VIDEO -->
-    <iframe src="https://www.youtube.com/embed/crUVeL6DojQ?rel=0&amp;autoplay=0" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube-nocookie.com/embed/crUVeL6DojQ" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
             style="display: block; background: #000; border: none;height: 90vh;width: 100vw;">Your
         browser doesn't support iframe.
     </iframe>
     <!-- FIRST BLOCK, TEXT + SMALL PICTURES -->
-    <div class="d-flex justify-content-around w-100 h-100 flex-wrap mt-3" style="height: %; border: 1px solid blue">
+    <div class="d-flex justify-content-around w-100 h-100 flex-wrap mt-3">
         <!-- TEXT BLOCK -->
-        <div class="d-flex flex-column justify-content-center align-self-center text-center text-lg-left " style="color: white; border: 1px solid green">
-            <h2 class="text-center">L’IMPORTANT C’EST D’AIMER</h2>
-            <h3 class="text-center">Pierre William Glenn </h3><br>
-            <p style="font-size: 1.25rem"><b>Dirigé par : </b>Pierre-William Glenn et Alexandre Marquand.</p>
+        <div class="d-flex flex-column flex-wrap justify-content-center align-self-center text-center text-lg-left "
+             style="color: white;  max-width: 55vw;">
+            <h2 class="text-center" style="font-size: 2rem">L’IMPORTANT C’EST D’AIMER</h2>
+            <h3 style="font-size: 1.8rem">Projet :</h3><br>
+            <p style="font-size: 1.25rem"><b>Titrage : </b>Exercice : L’important c’est d’aimer</p>
+            <p style="font-size: 1.25rem"><b>Production : </b> BTS Audiovisuel de Cannes </p>
+            <p style="font-size: 1.25rem"><b>Direction : </b>Pierre William Glenn </p>
+            <p style="font-size: 1.25rem"><b>Réalisation : </b>Alexandre Marquand </p>
             <p style="font-size: 1.25rem"><b>Directeur photographie : </b>Thomas Cazottes</p>
-            <p style="font-size: 1.25rem"><b>Cadreurs : </b>Emile Tornior, Pierre Bonnafé</p>
-            <p style="font-size: 1.25rem"><b>Assist Caméra : </b>Gaspard Soboul, Pierre Frink</p>
-            <p style="font-size: 1.25rem"><b>Eletriciens : </b>Gaétan Berteaux, Nina Chiron</p>
+            <p style="font-size: 1.25rem"><b>Acting : </b>NADINE : Ludivine Colle & JACQUES : Michael Sisowath </p>
+            <p style="font-size: 1.25rem"><b>équipe : </b>Promotion image 2019 BTS audiovisuel de Cannes </p>
+            <p style="font-size: 1.25rem"><b>description : </b>Dans le cadre d’un exercice mener par Pierre William
+                Glenn voici une réadaptation d’une séquence de L’important c’est d’aimer d’Andrzej Żuławski tourné dans
+                les studios de la formation </p>
             <p style="font-size: 1.25rem"><b>Caméra A : </b>Varicam LT ISO 800 V-log optique : CineAlta 50mm-85mm</p>
-            <p style="font-size: 1.25rem"><b>Caméra B : </b>Eva 1 ISO 800 V-log optique SIGMA HIGHT SPEED ZOOM 18-35mm</p>
+            <p style="font-size: 1.25rem"><b>Caméra B : </b>Eva 1 ISO 800 V-log optique SIGMA HIGHT SPEED ZOOM 18-35mms
+            </p>
             <p style="font-size: 1.25rem"><b>Machinerie : </b>Panthers S3 dolly</p>
         </div>
         <!-- SMALL PICTURES -->
-        <div class="d-lg-flex flex-column justify-content-center align-items-center d-none" style="display: none; border: 1px solid red">
-            <img class="mb-3" width="700px" height="467px"
+        <div class="d-lg-flex flex-column justify-content-center align-items-center d-none"
+             style="display: none; max-width: 40vw; overflow: hidden">
+            <img class="mb-3" width="750px" height="396px"
                  src="{{ asset('limportantcestdaimer/SITE-IMPORTANTCAIMER-FOTGRAM-NATIF-(1-of-8).jpg') }}"
                  alt="Photo de Ludivine Colle">
-            <img class="" width="700px" height="467px"
+            <img class="" width="750px" height="396px"
                  src="{{ asset('limportantcestdaimer/SITE-IMPORTANTCAIMER-FOTGRAM-NATIF-(3-of-8).jpg') }}"
                  alt="Photo de Michael Sisowath">
         </div>

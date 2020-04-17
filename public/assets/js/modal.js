@@ -7,12 +7,7 @@ var captionText = document.getElementById("caption");
 $('.myImg').click(function(){
     modal.style.display = "block";
     var newSrc = this.src;
-    if (newSrc.replace('MIGNA', 'NATIF')){
-        var modalSrc = newSrc.replace('MIGNA', 'NATIF') ;
-    }
-    else {
-        var modalSrc = newSrc.replace('.jpg', 'Grand.jpg');
-    }
+    var modalSrc = newSrc.replace('MIGNA', 'NATIF') ;
     modalImg.attr('src', modalSrc);
     captionText = this.alt;
 
